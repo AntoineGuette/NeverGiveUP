@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
     private static final long Start_time_in_millis=600000; // start time (long est comme int avec + de capacité de stockage)
     private TextView mTextOnTimer; // creation des variables auxquelles on associera les elements du xml
@@ -70,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void updateCountDownText(){
         int minutes = (int) (mTimerLeftInMillis  /1000) /60; // (int) est utilisé pour forcer une variable de se transformer dans le format de la parantese
-
+        int seconds = (int) (mTimerLeftInMillis  /1000) % 60;
+        String timeLeftFormatted = String.format(Locale.getDefault(),"%2d:%2d",minutes,seconds); // format est utilisé pour afficher les variables d'une fct specifique;
+        // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
     }
 }
