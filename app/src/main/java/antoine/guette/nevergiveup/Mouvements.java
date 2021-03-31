@@ -65,6 +65,6 @@ public class Mouvements {
         System.out.println("\u001B[46m"+PompesDiamant.nom+"\n"+PompesDiamant.description+"\n");
         System.out.println("\u001B[46m"+PompesHindu.nom+"\n"+PompesHindu.description+"\n");
         System.out.println("\u001B[46m"+PompesDecales.nom+"\n"+PompesDecales.description+"\n");
-    }
+    }//
 }
 
