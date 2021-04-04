@@ -9,5 +9,4 @@ public class Exercices_rep {
         this.Nb_rep = Nb_rep;
         this.Exo = Exo;
     }
-
 }
