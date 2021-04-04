@@ -23,7 +23,7 @@ public class Timer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.timer);
 
         mTextOnTimer = findViewById(R.id.text_on_timer); // association d'une variable au id du element que l'on veut
         mButtonStartStop = findViewById(R.id.button_start_stop);
