@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        mButtonBras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 }
     public static void main(String[] args){
         Mouvements Burpees = new Mouvements("Burpees:","Commencez en position debout. Maintenez vous en position de squat et posez vos mains sur le sol.\n" +

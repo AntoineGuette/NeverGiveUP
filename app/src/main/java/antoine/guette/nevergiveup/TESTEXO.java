@@ -22,7 +22,14 @@ public class TESTEXO extends AppCompatActivity {
         setContentView(R.layout.exo_rep);
         mTextOnEXOREP= findViewById(R.id.text_on_exorep); // association d'une variable au id du element que l'on veut
         mButtonRetour = findViewById(R.id.button_retour);
+        mButtonRetour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
+
         public void Burpees_10(Mouvements Burpees, int Nb_rep){
         Mouvements Burpees_10 = new Mouvements("Burpees","description");
         Nb_rep = 10;
