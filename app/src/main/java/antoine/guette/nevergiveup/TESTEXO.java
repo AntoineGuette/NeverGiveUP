@@ -3,6 +3,7 @@ package antoine.guette.nevergiveup;
 
 
 public class TESTEXO extends Mouvements{
+    Mouvements Exo;
 
     public TESTEXO(String nom, String description) {
         super(nom, description);
