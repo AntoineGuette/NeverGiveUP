@@ -88,5 +88,5 @@ public class Timer extends AppCompatActivity {
         // % est le symbole de debut de format, 2 sert a definir la longeur, d est le decimal ( pour float c'est f, par exemple)
         mTextOnTimer.setText(timeLeftFormatted); // on mets ce texte dans l'endroit dedié
     }
-
 }
+

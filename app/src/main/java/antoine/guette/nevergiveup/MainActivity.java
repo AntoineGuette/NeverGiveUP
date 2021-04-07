@@ -3,17 +3,35 @@ package antoine.guette.nevergiveup;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+    private ImageButton mButtonAbdos;
+    private ImageButton mButtonPoitrine;
+    private ImageButton mButtonJambes;
+    private ImageButton mButtonBras;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mButtonAbdos = findViewById(R.id.button_image_abdos);
+        mButtonPoitrine = findViewById(R.id.button_image_poitrine);
+        mButtonJambes = findViewById(R.id.button_image_jambes);
+        mButtonBras = findViewById(R.id.button_image_bras);
+
+        mButtonAbdos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 }
     public static void main(String[] args){
         Mouvements Burpees = new Mouvements("Burpees:","Commencez en position debout. Maintenez vous en position de squat et posez vos mains sur le sol.\n" +
